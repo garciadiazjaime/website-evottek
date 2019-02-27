@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="author" content="http://mintitmedia.com">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="index.fcgi/static/images/favicon.ico">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't Project if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" type="text/css" href="index.fcgi/static/css/vendor/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="index.fcgi/static/css/screen.css">
+    <!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="/index.fcgi/static/css/ie.css">
+    <![endif]-->
+
+	<base href="">
+</head>
+<body ng-controller="GralCtrl">
+	<header id="header" class="static">
+		<div class="container">
+	<div class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" id="responsive_btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Navigation Switch</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon close"></span>
+				</button><p id="lang_xs"  class="hidden-md hidden-lg"><a href="servicios.html" title="Cambiar a español" class="lang_link" ng-click="load_page()">ESP</a>&nbsp;/<span > ENG</span></p>
+				
+				<a id="home_logo" class="navbar-brand" href="home.html" title="Evottek - Automation Lab" lang-switch-url="/home">Evottek - Automation Lab</a>
+			</div><!-- / .nav-header -->
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav" id="mainmenu">
+					<li id="menu_nosotros" class="active"><a href="about-us.html" title="About Us" lang-switch-url="/nosotros">About Us <span class="icon nav-decor"></span></a></li><!-- #menu_nosotros -->
+					<li id="menu_servicios"><a href="services.html" title="Services" lang-switch-url="/servicios">Services <span class="icon nav-decor"></span>
+					</a></li><!-- #menu_servicios -->
+					<li id="menu_soluciones" ><a href="solutions.html" title="Solutions" lang-switch-url="/soluciones">Solutions <span class="icon nav-decor"></span></a></li><!-- #menu_soluciones -->
+					<li id="menu_contacto" ><a href="contact.html" title="Contact" lang-switch-url="/contacto">Contact <span class="icon nav-decor"></span></a></li><!-- #menu_contacto -->
+				</ul>
+				
+				<ul class="social">
+					<li class="facebook"><a href=" https://www.facebook.com/Evottek?ref=ts&fref=ts" target="_blank" title="Follow us on facebook" class="icon face" ></a></li>
+				</ul>
+				<p id="lang">
+					<a href="servicios.html" title="Cambiar a español" class="lang_link" ng-click="load_page()">ESP</a>&nbsp;/<span > ENG</span>
+				</p>
+			</div><!-- /.nav-collapse -->
+		</div><!-- /.container-fluid -->
+	</div><!-- /.navbar -->
+	<ul id="submenu_servicios">
+		<li id="m_administracion"><a href="services/project-management.html" title="Project Management ">
+				
+				Project Management
+				
+				
+				<span class="icon small_blue_arrow"></span> <span class="icon small_administracion"></span>
+			</a>
+		</li><li id="m_mecanica"><a href="services/mechanical-engineering.html" title="Mechanical engineering">
+				
+				Mechanical<br /> Engineering
+				
+				<span class="icon small_blue_arrow"></span> <span class="icon small_mecanica"></span>
+			</a>
+		</li><li id="m_maquinado"><a href="services/machining.html" title="Machining">
+				
+				Machining
+				
+				<span class="icon small_blue_arrow"></span> <span class="icon small_maquinado"></span>
+			</a>
+		</li><li id="m_sistemas"><a href="services/control-engineering.html" title="Control engineering">
+				
+				Control<br /> Engineering
+				
+				<span class="icon small_blue_arrow"></span> <span class="icon small_sistemas"></span>
+			</a>
+		</li><li id="m_ensamble"><a href="services/assembly.html" title="Assembly">
+				
+				Assembly<br /> Service
+				
+				<span class="icon small_blue_arrow"></span> <span class="icon small_ensamble"></span>
+			</a>
+		</li>
+	</ul><!-- #submenu_servicios -->
+</div><!-- /.container -->
+<div class="container text-right">
+</div>
+<span class="icon decor"></span>
+<span class="white_decor"></span>
+	</header>
+	<div ng-view></div>
+	<footer>
+		<div id="footer-contact">
+	<div class="full_container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8">
+				<div class="wrapp">
+					<p>Get to know our services and the improvements we can bring to your company or project.</p>
+				</div><!-- .wrapp -->
+			</div><!-- .col-xs-12 -->
+			<div class="col-xs-12 col-sm-4 text-center bck_blue">
+				<a href="contact.html" title="Contact us" class="arrow-link">Contact us<span class="icon arrow"></span></a>
+			</div><!-- .col-xs-12 -->
+		</div><!-- .row -->
+	</div><!-- .full_container -->
+	<span class="decor blue right"></span>
+</div><!-- #footer-contact -->
+<div id="footer-links">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3">
+						<h4><a href="about-us.html" title="About Us">About Us</a></h4>
+						<ul class="no-bullets">
+							<li><a href="about-us/who-we-are.html" title="Who we are">Who we are</a></li>
+							<li><a href="about-us/what-we-do.html" title="What we do">What we do</a></li>
+							<li><a href="about-us/mission-vision.html" title="Mission / Vision">Mission / Vision</a></li>
+							<li><a href="about-us/clients.html" title="Clients">Clients</a></li>	
+						</ul>
+					</div><!-- .col-xs-12 -->
+					<div class="col-xs-12 col-sm-3">
+						<h4><a href="services.html" title="Services">Services</a></h4>
+						<ul class="no-bullets">
+							<li><a href="services/project-management.html" title="Project Management">Project Management</a></li>
+							<li><a href="services/mechanical-engineering.html" title="Mechanical engineering">Mechanical engineering</a></li>
+							<li><a href="services/machining.html" title="Machining">Machining</a></li>
+							<li><a href="services/control-engineering.html" title="Control engineering">Control engineering</a></li>	
+							<li><a href="services/assembly.html" title="Assembly">Assembly</a></li>
+							<li><a href="services/how-we-work.html" title="How we work">How we work</a></li>
+						</ul>
+					</div><!-- .col-xs-12 -->
+					<div class="col-xs-12 col-sm-3">
+						<h4><a href="solutions.html" title="Solutions">Solutions</a></h4>
+						<ul class="no-bullets">
+							<li><a href="solutions/industries.html" title="Industries">Industries</a></li>
+							<li><a href="solutions/success-stories.html" title="Success stories">Success stories</a></li>
+						</ul>
+					</div><!-- .col-xs-12 -->
+					<div class="col-xs-12 col-sm-3">
+						<h4><a href="contact.html" title="Contact">Contact</a></h4>
+						<ul class="no-bullets">
+							<li><a href="contact/location.html" title="Location">Location</a></li>
+							<li><a href="contact/contact-form.html" title="Contact form">Contact form</a></li>
+						</ul>
+					</div><!-- .col-xs-12 -->
+				</div><!-- .row -->
+			</div><!-- .col-xs-12 -->
+			<div id="footer-dir" class="col-xs-12 col-sm-4">
+				<h5>Evottek - Automation lab <span class="icon evottek-white-xs"></span></h5>
+				<div class="wrapp">
+					<p>Calle Villa Charra No 107, Col. Rincon Dorado, Tijuana, Baja California</p>
+
+					<a href="tel:6646821212" title="Give us a call">01 (664) 682 1212</a>
+
+					<a href="mailto:info@evottek.com" title="Write to us">info@evottek.com</a>
+				
+					<ul class="social">
+						<li class="facebook first"><a href=" https://www.facebook.com/Evottek?ref=ts&fref=ts" target="_blank" title="Follow us on facebook" class="icon face" ></a></li>
+						<li class="linkedin"><a href="https://www.linkedin.com/company/evottek" target="_blank" title="Follow us on Linkedin" class="icon linked"></a></li>
+					</ul><!-- .social -->
+				</div><!-- .wrapp -->	
+			</div><!-- #footer-dir.col-xs-12 -->
+		</div><!-- .row -->
+	</div><!-- .container -->
+</div><!-- #footer-links -->
+<div id="footer-powered">
+	<div class="container">
+		<p>All rights reserved Evottek Automation Lab  © 2015          <span>A project of:  <a href="http://somospool.com/" title="Branding Pool" target="_blank">POOL</a>   Code by:  <a href="http://mintitmedia.com/" title="Mint IT Media - Web design and development" target="_blank">Mint</a></span> </p>
+	</div><!-- .container -->
+</div><!-- #footer-powered -->
+	</footer>
+	
+	<script type="text/javascript" src="index.fcgi/static/js/vendor/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="index.fcgi/static/js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular-route.min.js"></script>
+	<script type="text/javascript" src="index.fcgi/static/js/messages.js"></script>
+	<script type="text/javascript" src="index.fcgi/static/js/app.js"></script>
+	<script type="text/javascript" src="index.fcgi/static/js/main.js"></script>
+</body>
+</html>
