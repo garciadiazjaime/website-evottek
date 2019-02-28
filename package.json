@@ -1,0 +1,15 @@
+{
+  "name": "website-evottek",
+  "version": "1.0.0",
+  "description": "## Download website",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server www",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "google:clean": "gsutil -m rm -r gs://www.evottek.co",
+    "google:upload": "gsutil -m cp -r ./www/. gs://www.evottek.co",
+    "deploy": "npm run google:upload"
+  },
+  "author": "",
+  "license": "ISC"
+}

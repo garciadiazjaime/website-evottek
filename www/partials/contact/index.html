@@ -1,0 +1,106 @@
+<div id="contact-panel">
+	<div id="banner">	
+	</div>
+	<span id="location"></span><span id="contact-form"></span>
+	<div id="contact-wrap">
+		<div class="bck_blue">
+			<div class="container">
+				<h4 class="icon_holder">Contact <span class="icon big-down-arrow"></span></h4>
+			</div>	
+		</div>	
+		<div id="map-header-xs" class="hidden-md hidden-lg light-blue_background">
+			<div class="wrapp">
+				<div class="row">
+					<div class="col-xs-6">
+						<h5>Location</h5>
+					</div>
+					<div class="col-xs-6">
+						<a href="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d13460.25124760457!2d-116.99111735000001!3d32.49775030000001!3m2!1i1024!2i768!4f13.1!2m1!1sCalle+Villa+Charra+107+Colonia+Rinc%C3%B3n+Dorado+Tijuana%2C+Baja+California!5e0!3m2!1sen!2smx!4v1416507148965" class="icon_holder arrow-link light">View on Google Maps <span class="icon small_blue_arrow"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contact-content" class="full_container">
+			<div class="row">
+				<div id="form-column" class="col-xs-12 col-md-4">
+					<div class="wrapp">
+						<form id="contactForm" name="contactForm"  role="form" novalidate>
+							<div class="form-group">
+								<span class="label label-danger" data-ng-show="submitted && contactForm.name.$error.required">Required!</span>
+								<input type="text" name="name" ng-model="name" class="" required placeholder="Name*">
+							</div>
+							<div class="form-group">
+								<input type="text" name="company" ng-model="company" class="" placeholder="Company">
+							</div>
+							<div class="form-group">
+								<span class="label label-danger" data-ng-show="submitted && contactForm.email.$error.required">Required!</span>
+								<span class="label label-danger" data-ng-show="submitted && contactForm.$error.email">Invalid email!</span>
+								<input type="email" name="email" ng-model="email" class="" required placeholder="Email*">
+							</div>
+
+							<div class="form-group">
+								<input type="phone" name="phone" ng-model="phone" class="" placeholder="Telephone">
+							</div>
+
+							<div class="form-group">
+								<div id="service_select_wrap">
+									<select id="service_select" class="" ng-model="service">
+										<option value="">Service of interest</option>
+										<option value="admon_proyectos">Project Management</option>
+										<option value="ing_mecanica">Mechanical engineering</option>
+										<option value="serv_maquinado">Machining</option>
+										<option value="ing_sistemas_control">Control engineering</option>
+										<option value="serv_ensamble">Assembly</option>
+									</select>
+									<span class="icon select-down-arrow"></span>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<span class="label label-danger" data-ng-show="submitted && contactForm.message.$error.required">Required!</span>
+								<textarea name="message" rows="4" ng-model="message" class="" required placeholder="Message*"></textarea>
+							</div>
+
+							<button ng-click="submit(contactForm)" class=" pull-right icon_holder arrow-link light">
+								Send
+								<span class="icon small_blue_arrow"></span>
+							</button>
+							<div id="messages" class="alert alert-danger" data-ng-show="messages" data-ng-bind="messages"></div>
+						</form><!-- #contactForm -->
+					</div><!-- .wrapp -->
+				</div>
+				<div id="address-column" class="col-xs-12 col-md-4 bck_standar_blue">
+					<div class="wrapp">
+						<address>
+							Calle Villa Charra No 107<br>
+							Colonia Rincón Dorado<br>
+							Tijuana, Baja California<br>
+							C.P. 22203
+						</address>	
+						<a href="tel: 016646821212" title="Give us a call" class="tel">01 (664) 682 1212</a>
+						<br />
+						<a id="call_btn" class="icon_holder" href="tel: 016646821212" title="Call">Call<span class="icon right-arrow-blue"></span></a>
+					</div>
+				</div>
+
+				<div id="map-column" class="col-xs-12 col-md-4 light-blue_background hidden-xs hidden-sm">
+					<div id="map-header">
+						<div class="wrapp">
+							<div class="row">
+								<div class="col-xs-6">
+									<h5>Location</h5>
+								</div>
+								<div class="col-xs-6">
+									<a href="https://www.google.com.mx/maps/place/32%C2%B031%2727.4%22N+116%C2%B053%2759.1%22W/@32.5242773,-116.89975,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0?hl=en" target="_blank" class="icon_holder arrow-link light">View on Google Maps <span class="icon small_blue_arrow"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="map-content">
+						<iframe src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13456.280007450125!2d-116.89974999999998!3d32.5242773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDMxJzI3LjQiTiAxMTbCsDUzJzU5LjEiVw!5e0!3m2!1sen!2smx!4v1417545129414" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>	<!-- #contact-content.full_container -->
+	</div>
+</div><!-- #contact-panel -->
